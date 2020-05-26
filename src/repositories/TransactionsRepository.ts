@@ -5,7 +5,6 @@ interface Balance {
   outcome: number;
   total: number;
 }
-
 class TransactionsRepository {
   private transactions: Transaction[];
 
@@ -14,9 +13,9 @@ class TransactionsRepository {
   }
 
   public all(): Transaction[] {
-    // TODO
+    return this.transactions;
   }
-
+  /*
   public getBalance(): Balance {
     // TODO
   }
@@ -24,6 +23,7 @@ class TransactionsRepository {
   public create(): Transaction {
     // TODO
   }
+*/
 }
 
 export default TransactionsRepository;
